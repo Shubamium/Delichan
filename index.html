@@ -23,48 +23,61 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header id="header">
-        <!-- Background  -->
-        <div></div>
-        <!-- Main Logo -->
-        <img src="media/images/transparent/logo_main.png" alt="Delichan Main logo">
-        
-        <!-- Subtitle -->
-        <div class="subtitle">
-            <div class="subtitle_title">
-                <div class="line"></div> 
-                <p>✦ vtuber & vartist ✦</p> 
-                <div class="line"></div> 
+   <div id="container_main">
+        <!-- Header -->
+        <header id="header">
+            <!-- Background  -->
+            <div id="header_bg">
+                <video src="media/video/background.mp4" loop muted autoplay id="bg-vid" ></video>
+                <!-- Autoplay scripts -->
+                <script>
+                    let bg = document.getElementById('bg-vid');
+                    document.addEventListener('click',()=>{
+                        if(bg.paused){
+                            bg.play();
+                        }
+                    });
+                </script>
             </div>
-            <p class="subtitle_text">
-                Hi, I'm Delichan but you can call me Deli-!!! <br>
-                I'm a full-time freelance graphic designer. I'll assist you in your project 🌻
-            </p>
-        </div>
+            <!-- Main Logo -->
+            <img src="media/images/transparent/logo_main.png" alt="Delichan Main logo">
+            
+            <!-- Subtitle -->
+            <div class="subtitle">
+                <div class="subtitle_title">
+                    <div class="line"></div> 
+                    <p>✦ vtuber & vartist ✦</p> 
+                    <div class="line"></div> 
+                </div>
+                <p class="subtitle_text">
+                    Hi, I'm Delichan but you can call me Deli-!!! <br>
+                    I'm a full-time freelance graphic designer. I'll assist you in your project 🌻
+                </p>
+            </div>
 
-        <!-- Info List -->
-        <div class="header_info">
-            <ul>
-                <li>♡ delilah</li>
-                <li>♡ she/her</li>
-                <li>♡ 158cm</li>
-                <li>♡ 09/07(Cancer♋)</li>
-            </ul>
-        </div>
+            <!-- Info List -->
+            <div class="header_info">
+                <ul>
+                    <li>♡ delilah</li>
+                    <li>♡ she/her</li>
+                    <li>♡ 158cm</li>
+                    <li>♡ 09/07(Cancer♋)</li>
+                </ul>
+            </div>
 
-        <!-- Navigation -->
-        <nav id="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="waitlist.html">Waitlist</a></li>
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-            </ul>
-        </nav>
-    </header>
+            <!-- Navigation -->
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="waitlist.html">Waitlist</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
 
+   </div>
 </body>
 </html>
