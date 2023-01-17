@@ -11,3 +11,17 @@
     box-sizing: border-box;
     list-style-type: none;
 }
+
+/* Site Settings */
+:root{
+    --fontNorm: 'Fredoka', sans-serif;
+    --fontTech: 'Turret Road', cursive;
+    --fontFuture: 'Major Mono Display', monospace;
+}
+
+body{
+    background-color: #170711;
+    color: white;
+    font-family: var(--fontNorm);
+    font-weight: lighter;
+}
