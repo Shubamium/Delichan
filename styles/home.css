@@ -11,6 +11,7 @@ main{
         font-weight: 400;
         letter-spacing: 10px;
         font-size: 2rem;
+        white-space: nowrap;
     }
     .commission-status .status{
         background: var(--brighterGradient);
@@ -121,6 +122,26 @@ main{
         color: var(--yellow);
     }
 
+
+@media screen and (max-width:600px) {
+    .commission-status h2{
+        font-size: 1rem;
+        letter-spacing: 4px;
+    }
+    .commission-status .status{
+        font-size: 1.6rem;
+    }
+
+    .vgen .vgen_link{
+        font-size: small;
+    }
+    .vgen{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+        gap: .5em;
+    }
+}
 
 .decor_banner{
     transform: scale(-1) scaleX(1.1);
