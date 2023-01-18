@@ -136,6 +136,7 @@ body{
             width: 100%;
             margin: .5em;
             mask-image: linear-gradient(90deg, rgba(217, 217, 217, 0) 10%, #d9d9d9d0 50.15%, rgba(217, 217, 217, 0) 90%);
+            -webkit-mask-image: -webkit-linear-gradient(180deg, rgba(217, 217, 217, 0) 10%, #d9d9d9d0 50.15%, rgba(217, 217, 217, 0) 90%);
         }
 
         #header .header_info ul{
