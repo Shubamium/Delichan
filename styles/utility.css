@@ -1,1 +1,55 @@
 /* Utility Classes */
+
+/* Layout */
+.confine{
+    max-width: var(--lg);
+}
+
+.mx-auto{
+    margin: 0 auto;
+}
+
+
+/* Typography */
+
+.f-main{
+    font-family: var(--fontNorm);
+    font-weight: lighter;
+}
+.f-tech{
+    font-family: var(--fontTech);
+}
+.f-future{
+    font-family: var(--fontFuture);
+}
+
+
+
+/* Animation */
+
+@keyframes flicker {
+    0%, 19.999%, 22%, 62.9999%, 64%, 64.999%, 70%, 100% {
+        opacity: 0.99;
+    }
+    20%, 21.999%, 63%, 63.9999%, 65%, 69.999% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes glow {
+    from{
+        filter: brightness(80%);
+    }
+    76%{
+        filter: brightness(130%);
+    }
+    to{
+        filter: brightness(80%);
+    }
+}
+.flicker-slow{
+   animation: flicker 8s linear infinite;
+}
+.glow{
+   animation: glow 5s ease-in-out infinite;
+}
