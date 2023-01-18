@@ -22,6 +22,7 @@
     /* Breakpoints */
     --lg: 1200px;
     --md: 824px;
+    --sm: 600px;
 
     /* Colors */
     --pink:#CB4763;
@@ -105,8 +106,8 @@ body{
             }
             #header .subtitle .subtitle_title .line{
                 width: 100%;
-                height: 1px;
-                background-color: white;
+                height: 0px;
+                border: 1px solid white;
                 flex: 1;
             }
 
@@ -154,7 +155,7 @@ body{
         gap: 2em;
         justify-content: center;
         align-items: center;
-        margin: .6em  0;
+        margin: .9em  0;
     }
 
         #navigation .nav li a {
@@ -164,7 +165,7 @@ body{
             height: 100%;
             display: block;
             padding: 0.3em 1.5em;
-            background: linear-gradient(180deg, #6c251d36 0%, #7b3f1928 100%);
+            background: linear-gradient(180deg, #6c251d49 0%, hsla(23, 66%, 29%, 0) 100%);
             border: 1px solid #7B3F19;
             border-radius: 3px;
 
@@ -177,6 +178,8 @@ body{
             background: linear-gradient(180deg, #6C251D 0%, #7B3F19 100%);
             border-radius: 4px 20px 4px 20px;
             scale: 1;
+            box-shadow: 0px 0px 8px 4px #9f2a4556;
+
         }
         
         @media screen and (max-width: 824px){
@@ -187,5 +190,22 @@ body{
             }
             #navigation .nav li{
                 width: 60%;
+            }
+        }
+        @media screen and (max-width: 600px){
+            #header .subtitle .subtitle_text{
+                font-size: .6rem;
+            }
+            #header .subtitle .subtitle_text .flower{
+                display: none;
+            }
+        
+            #header .subtitle .subtitle_title p{
+                font-size: .75rem;
+            }
+
+            #header .header_info ul{
+                flex-direction: column;
+                gap: 0.2em;
             }
         }
