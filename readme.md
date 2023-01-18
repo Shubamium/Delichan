@@ -1,4 +1,4 @@
-# Delichan - Graphic Designer Website
+# Delichan -  Website Commission
 This repository contains the files and resources for the website design project for <a href="https://twitter.com/delichan3d" target="_blank">@delichan</a>.<br>
 Thank you for commisioning me ^-^!
 <!-- 
