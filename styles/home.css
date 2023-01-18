@@ -1,0 +1,118 @@
+/* Styling for =Home= Page */
+main{
+    color: var(--light-pink);
+}
+
+.commission-status{
+    text-align: center;
+    margin: 2em;
+}
+    .commission-status h2{
+        font-weight: 400;
+        letter-spacing: 10px;
+        font-size: 2rem;
+    }
+    .commission-status .status{
+        background: var(--brighterGradient);
+        
+        border: 2px solid;
+        border-image-source: linear-gradient(180deg, #96362C 0%, #7B3F19 100%);
+        border-image-slice: 1;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        width: fit-content;
+        margin: .1em auto;
+        padding: 0 2em;
+        font-size: 3rem;
+        font-weight: bold;
+
+    }
+
+    .commission-status .status p.closed{
+        text-transform: uppercase;
+        color: transparent;
+        background: linear-gradient(117.07deg, rgba(239, 38, 159, 0.8) 22.35%, #96362C 60.72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    .commission-status .status p.open{
+        text-transform: uppercase;
+        background: linear-gradient(122.09deg, #5CFF80 14.97%, #FF6161 88.22%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+    }
+
+
+.vgen{
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+    .vgen .icon::before{
+        content:url("../media/images/transparent/icons/vgen.png");
+        display: inline-block;
+        transform: translateY(25%);
+        -webkit-transform: translateY(25%);
+        -moz-transform: translateY(25%);
+        -ms-transform: translateY(25%);
+        -o-transform: translateY(25%);
+    }
+
+    .vgen .vgen_link{
+        background: var(--brighterGradient);
+        border: 1px solid;
+        border-image-source: linear-gradient(180deg, #96362C 0%, #7B3F19 100%);
+        border-image-slice: 1;
+
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+
+        
+        transition: all 250ms ease;
+        -webkit-transition: all 250ms ease;
+        -moz-transition: all 250ms ease;
+        -ms-transition: all 250ms ease;
+        -o-transition: all 250ms ease;
+    }
+    
+        .vgen .vgen_link a{
+            text-decoration: none;
+            color: var(--yellow);
+            padding: .3em .7em;
+            display: inline-block;
+        }
+
+        .vgen .vgen_link:hover{
+            filter: brightness(120%);
+            -webkit-filter: brightness(120%);
+            box-shadow: 0px 0px 6px 0px #9f2a4581;
+
+        }
+
+        .vgen .vgen_link:hover a{
+            text-decoration: underline;
+        }
+
+.waitlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+    .waitlist p{
+        color: var(--yellow);
+    }

@@ -23,6 +23,12 @@
     font-family: var(--fontFuture);
 }
 
+.text-sm{
+    font-size: .8rem;
+}
+.text-xs{
+    font-size: .6rem;
+}
 
 
 /* Animation */
@@ -90,3 +96,4 @@
 .text-glow-sm{
     text-shadow: 0px 0px 6px #9f2a452d;
 }
+
