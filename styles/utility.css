@@ -75,8 +75,34 @@
    -webkit-animation: flicker 4s linear infinite,glow 5s ease-in-out infinite;
 }
 
+@keyframes bg-flow {
+    from{
+        background-position: 0% 0%;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
 
+.bg-flow{
+    animation: bg-flow 80s linear infinite ;
+    -webkit-animation: bg-flow 80s linear infinite ;
+}
 
+@keyframes sway {
+    from{
+        rotate: 0deg;
+    }
+    33%{
+        rotate: -10deg;
+    }
+    66%{
+        rotate: 10deg;
+    }
+    to{
+        rotate: 0deg;
+    }
+}
 /* Details */
 
 .glow-lg{

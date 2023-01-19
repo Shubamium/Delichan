@@ -133,14 +133,7 @@ main{
             -webkit-animation: bg-flow 80s linear infinite ;
         }
 
-        @keyframes bg-flow {
-            from{
-                background-position: 0% 0%;
-            }
-            to{
-                background-position: 100% 100%;
-            }
-        }
+      
 
 
         @media screen and (max-width:800px) {
