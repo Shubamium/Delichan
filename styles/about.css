@@ -58,6 +58,9 @@ main{
         align-items: center;
         margin-top: -15px;
     }
+    #about .decor_neon .neon-sign img{
+        scale: 1.2;
+    }
 
 #about .about_text{
     padding: .3em 1em;
