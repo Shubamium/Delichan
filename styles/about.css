@@ -1,0 +1,20 @@
+/* Styling for =Home= Page */
+
+/* Monoton Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+main{
+    color: var(--light-pink);
+}
+
+
+.f-neon{
+    font-family: 'Monoton', cursive;
+}
+
+
+
+#about{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}

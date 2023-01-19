@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delichan</title>
+    <link rel="shortcut icon" href="media/images/transparent/icons/favicon-mascot.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/utility.css">
+    <link rel="stylesheet" href="styles/about.css">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bb83019d49.js" crossorigin="anonymous"></script>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Delichan">
+    <meta name="description" content="Hi, I'm Delichan~ but you can call me Deli-!!! I'm a full-time freelance graphic designer. I'll assist you in your project ">
+
+
+</head>
+<body>
+
+   <div id="container_main">
+        <!-- Header -->
+        <header id="header">
+            <!-- Background  -->
+            <div id="header_bg">
+                <video src="media/video/background.mp4" loop muted autoplay id="bg-vid" poster="media/images/art_bg.png"></video>
+                <!-- Autoplay scripts -->
+                <script>
+                    let bg = document.getElementById('bg-vid');
+                    document.addEventListener('click',()=>{
+                        if(bg.paused){
+                            bg.play();
+                        }
+                    });
+                </script>
+            </div>
+            
+            <div class="confine mx-auto header_content">
+                <!-- Main Logo -->
+                <img src="media/images/transparent/logo_main.png" alt="Delichan Main logo" class="header_logo glow flicker-slow">
+                
+                <!-- Subtitle -->
+                <div class="subtitle">
+                    <div class="subtitle_title">
+                        <div class="line glow-md"></div> 
+                        <p class="f-future">✦ vtuber & vartist ✦</p> 
+                        <div class="line glow-md"></div> 
+                    </div>
+                    <p class="subtitle_text">
+                        Hi, I'm Delichan but you can call me Deli-!!! <br>
+                        I'm a full-time freelance graphic designer. I'll assist you in your project <span class="flower">🌻</span>
+                    </p>
+                </div>
+
+                <!-- Info List -->
+                <div class="header_info">
+                    <ul>
+                        <li>♡ delilah</li>
+                        <li>♡ she/her</li>
+                        <li>♡ 158cm</li>
+                        <li>♡ 09/07(Cancer♋)</li>
+                    </ul>
+                </div>
+
+                <!-- Navigation -->
+                <nav id="navigation">
+                    <ul class="nav">
+                        <li><a href="index.html" class="glow-sm">Home</a></li>
+                        <li><a href="about.html" class="glow-sm">About</a></li>
+                        <li><a href="portfolio.html" class="glow-sm">Portfolio</a></li>
+                        <li><a href="waitlist.html" class="glow-sm">Waitlist</a></li>
+                        <li><a href="terms.html" class="glow-sm">Terms</a></li>
+                        <li><a href="pricing.html" class="glow-sm">Pricing</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- Page Content -->
+        <main>
+            
+            <div class="confine mx-auto">
+                    <!-- About Section -->
+                    <section id="about">
+
+                        <!-- Image -->
+                        <div class="image-part">
+                            <img src="media/images/transparent/art_square.png" alt="">
+                            <!-- Credit -->
+                            <p>
+                                art by 
+                                <span>
+                                    <a href="https://twitter.com/uchimasui" target="_blank">
+                                        @uchimasui
+                                    </a>
+                                </span>
+                            </p>
+                        </div>
+
+                        <!-- About Text -->
+                        <article class="about_text">
+                            <h2 class="title f-future">
+                                AbouT♡
+                            </h2>
+                            <div class="panel">
+                                <!-- Profile Bio -->
+                                <p>
+                                    Hi, I'm Delichan~ but you can call me Deli-!!!
+
+                                    I'm a full-time freelance graphic designer. 
+                                    I'll assist you in your project 
+                                </p>
+
+                                <!-- Links -->
+                                <ul class="about_links">
+                                    <li><a href="https://twitter.com/Delichan3D"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://discord.com/invite/jqf9yUbPqt"><i class="fa-brands fa-discord"></i></a></li>
+                                    <li><a href="https://www.twitch.tv/delichan"><i class="fa-brands fa-twitch"></i></a></li>
+                                    <li><a href="https://throne.me/u/delichan"><i class="fa-solid fa-crown"></i></a></li>
+                                    <li><a href="https://ko-fi.com/delichan3d" class="kofi"><i class="fa-solid fa-mug-saucer"></i></a></li>
+                                    <li><a href="https://www.tiktok.com/@delichan3d"><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="decor_zigzag"></div>
+                        </article>
+
+                        <!-- Decoration -->
+                        <div>
+                            <p class="f-neon">DELILCHAN</p>
+                            <div class="neon-sign">
+                                <img src="media/images/transparent/decor/traingle_empty.png" alt="">
+                                <img src="media/images/transparent/decor/traingle_fill.png" alt="">
+                                <img src="media/images/transparent/decor/traingle_empty.png" alt="">
+                                <img src="media/images/transparent/decor/bowtie.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+            </div>
+
+        </main>
+   </div>
+</body>
+</html>
