@@ -23,7 +23,6 @@ function updateSign(){
 
 function updateNeon(){
 
-    console.log(prevNeonId,activeNeonId);
     allNeon[prevNeonId].src = emptySrc;
     allNeon[activeNeonId].src = fillSrc;
     prevNeonId = activeNeonId;
@@ -31,10 +30,5 @@ function updateNeon(){
     if(activeNeonId< 0){
         activeNeonId = allNeon.length-2;
     }
-    for(let i = 0; i < allNeon.length; i++){
-        // allNeon
-    }
 
 }
-
-// allNeon[1].src = fillSrc;
