@@ -5,6 +5,7 @@
 
 main{
     color: var(--light-pink);
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -78,6 +79,7 @@ main{
     }
         #about .panel p{
             font-size: 1.3rem;
+            letter-spacing: 1px;
         }
 
 #about .line{
@@ -134,5 +136,20 @@ main{
             }
             to{
                 background-position: 100% 100%;
+            }
+        }
+
+
+        @media screen and (max-width:800px) {
+            #about .decor_neon{
+                display: none;
+            }
+            #about{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #about .about_text{
+                min-height: 500px;
             }
         }
