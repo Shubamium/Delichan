@@ -1,0 +1,39 @@
+/* Styling for =Portfolio= Page */
+.decor_banner img{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    object-fit: cover;
+    display: block;
+    transform: scaleY(.9);
+    -webkit-transform: scaleY(.9);
+    -moz-transform: scaleY(.9);
+    -ms-transform: scaleY(.9);
+    -o-transform: scaleY(.9);
+    transform-origin: bottom center;
+}
+.decor_banner{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: -30%;
+}
+
+ 
+#gallery-nav{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+    #gallery-nav .image img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #gallery-nav .navigation{
+        display: flex;
+        justify-content: space-between;
+    }
+    #gallery-nav .decor_zig-zag{
+        flex: 1;
+        min-height: 200px;
+    }
