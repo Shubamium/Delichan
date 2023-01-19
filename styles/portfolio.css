@@ -1,4 +1,8 @@
 /* Styling for =Portfolio= Page */
+
+#header{
+    margin-bottom: 400px;
+}
 .decor_banner img{
     width: 100%;
     height: 100%;
@@ -11,6 +15,7 @@
     -ms-transform: scaleY(.9);
     -o-transform: scaleY(.9);
     transform-origin: bottom center;
+    pointer-events: none;
 }
 .decor_banner{
     max-width: 80%;

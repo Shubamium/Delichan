@@ -54,7 +54,7 @@ body{
     position: relative;
     padding-top: 2em;
     padding-bottom: 7em;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
     @media screen and (max-height:1000px) {
         #header{
@@ -201,6 +201,9 @@ body{
             }
             #navigation .nav li{
                 width: 60%;
+            }
+            #header{
+                margin-bottom: 240px;
             }
         }
         @media screen and (max-width: 600px){
