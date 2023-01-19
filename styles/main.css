@@ -29,6 +29,7 @@
     --light-pink:#FF8D81;
     --orange:#7B3F19;
     --yellow:#E5D963;
+    --bright-yellow:#FFC500;
 
     /* Gradient */
     --mainGradient:linear-gradient(0deg, rgba(114, 33, 48, 0) 0%, rgba(108, 37, 29, 0.144) 91.43%);
@@ -312,3 +313,10 @@ main{
     .btn.small a{
         font-size: 1rem;
     }
+
+
+
+.panel{
+    border: 2px solid var(--orange);
+    background: var(--mainGradient);
+}

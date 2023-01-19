@@ -30,6 +30,12 @@
     font-size: .6rem;
 }
 
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
 
 /* Animation */
 
@@ -56,8 +62,17 @@
 .flicker-slow{
    animation: flicker 8s linear infinite;
 }
+.flicker-fast{
+    animation: flicker 4s linear infinite;
+    -webkit-animation: flicker 4s linear infinite;
+}
 .glow{
    animation: glow 5s ease-in-out infinite;
+   -webkit-animation: glow 5s ease-in-out infinite;
+}
+.glow-flicker{
+    animation: flicker 4s linear infinite,glow 5s ease-in-out infinite;
+   -webkit-animation: flicker 4s linear infinite,glow 5s ease-in-out infinite;
 }
 
 
@@ -97,3 +112,7 @@
     text-shadow: 0px 0px 6px #9f2a452d;
 }
 
+.decor_zigzag{
+    /* background-color: rebeccapurple; */
+    background-image: url("../media/images/transparent/pattern/line_small.png");
+}
