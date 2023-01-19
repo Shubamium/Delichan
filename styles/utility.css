@@ -103,6 +103,12 @@
         rotate: 0deg;
     }
 }
+
+.sway{
+    animation:  sway 150s linear infinite;
+    -webkit-animation:  sway 150s linear infinite;
+    transform-origin: bottom center;
+}
 /* Details */
 
 .glow-lg{
@@ -139,6 +145,14 @@
 }
 .text-pink{
     color: var(--pink);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.underline{
+    text-decoration: underline;
 }
 
 .decor_zigzag{

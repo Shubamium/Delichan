@@ -3,12 +3,57 @@
 main{
     color: var(--yellow);
 }
+a{
+    color: var(--yellow);
+}
 #terms_main{
-    min-height: 400px;
+    padding: 2em;
 }
 
     #terms_main .decor_zigzag{
         height: 20px;
         width: 100%;
         margin: .5em 0;
+    }
+
+    #terms_main .main_img{
+        max-height: 400px;
+        margin: -2% auto;
+        width: 100%;
+        object-fit: contain;
+        object-position: 48%;
+    }
+    #terms_main .main_text{
+        color: var(--bright-yellow);
+        letter-spacing: 2px;
+        margin: .4em 0;
+        position: relative;
+        font-size: 1.8rem;
+    }
+    #terms_main .main_text::before{
+        content: '';
+        width: 30%;
+        position: absolute;
+        top: 0;
+        border: 1px solid var(--red);
+        border-left: none;
+        border-right: none;
+        left: 50%;
+        transform: translate(-50%);
+        height: 110%;
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+}
+    #terms_main .main_para{
+        font-size: .9rem;
+        max-width: 75ch;
+        margin: 0 auto;
+    }   
+
+    #terms_main .btn{
+        display: block;
+        margin: 1em  auto;
+        padding: .2em;
     }

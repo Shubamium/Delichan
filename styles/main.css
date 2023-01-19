@@ -30,6 +30,7 @@
     --orange:#7B3F19;
     --yellow:#E5D963;
     --bright-yellow:#FFC500;
+    --red:#6C251D;
 
     /* Gradient */
     --mainGradient:linear-gradient(0deg, rgba(114, 33, 48, 0) 0%, rgba(108, 37, 29, 0.144) 91.43%);
@@ -303,13 +304,16 @@ main{
     .btn.link a{
         color: var(--yellow);
         text-shadow: 0px 0px 5px black;
-        padding: 1.5em 2em;
+        padding: .2em 1em;
         font-size: 1.5rem;
         text-decoration: none;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+        top: 2px;
+        position: relative;
+        display: block;
     }
 
     .btn.small,
