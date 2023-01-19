@@ -1,1 +1,14 @@
 /* Styling for =Terms= Page */
+
+main{
+    color: var(--yellow);
+}
+#terms_main{
+    min-height: 400px;
+}
+
+    #terms_main .decor_zigzag{
+        height: 20px;
+        width: 100%;
+        margin: .5em 0;
+    }
