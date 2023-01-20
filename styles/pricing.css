@@ -1,1 +1,127 @@
 /* Styling for =Pricing= Page */
+
+main{
+    color: var(--light-pink);
+}
+
+#package-set .sets{
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    justify-items: stretch;
+    gap: 2em;
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    #package-set .sets .set{
+        border: 2px solid var(--orange);
+        border-radius: 0 20px 0 0;
+        -webkit-border-radius: 0 20px 0 0;
+        -moz-border-radius: 0 20px 0 0;
+        -ms-border-radius: 0 20px 0 0;
+        -o-border-radius: 0 20px 0 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #package-set .sets .set .info {
+        padding: .3em;
+    }
+        #package-set .sets .set .info .line{
+            width: 90%;
+            margin: .3em auto;
+            height: 0px;
+            border: 1px solid var(--yellow);
+
+        }
+        #package-set .sets .set .info h2{
+            font-family:var(--fontTech);
+            font-size: 1.4rem;
+            color: var(--yellow);
+            margin: .3em .5em;
+        }
+        #package-set .sets .set .info .features{
+            display: flex;
+            flex-direction: column;
+            gap:.4em;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        #package-set .sets .set .info .features p{
+            color: white;
+            margin-left: 1em;
+            font-size: .8rem;
+            transition: all 250ms ease;
+            -webkit-transition: all 250ms ease;
+            -moz-transition: all 250ms ease;
+            -ms-transition: all 250ms ease;
+            -o-transition: all 250ms ease;
+            font-weight: 200;
+        }   
+        #package-set .sets .set .info .features p:hover{
+            padding: .5em 0;
+            background-color: rgba(76, 137, 252, 0.158);
+            mask-image: linear-gradient(90deg, #d9d9d9d0 40.15%, rgba(217, 217, 217, 0) 90%);
+            /* -webkit-mask-image: -webkit-linear-gradient(180deg, #d9d9d9d0 40.15%, rgba(217, 217, 217, 0) 90%) */
+        }
+
+        #package-set .sets .set .info .features p i{
+            color: var(--pink);
+            margin: 0 .6em;
+        }
+
+    #package-set .sets .set .price{
+        color: black;
+        font-size:2.3rem;
+        text-align: center;
+        padding: .1em;
+        background-color: var(--orange);   
+    }
+
+        #package-set .sets .set.yellow{
+            border:2px solid var(--yellow);
+            background: linear-gradient(0deg, rgba(46, 196, 178, 0) 0%, rgba(229, 217, 99, 0.2) 91.43%);
+            box-shadow: 0px 0px 0px 0px rgba(144, 38, 59, 0.25);
+            transition: all 250ms ease;
+            -webkit-transition: all 250ms ease;
+            -moz-transition: all 250ms ease;
+            -ms-transition: all 250ms ease;
+            -o-transition: all 250ms ease;
+        }
+        #package-set .sets .set.set.yellow:hover{
+            box-shadow: 0px 0px 30px 3px rgba(144, 38, 59, 0.25);
+
+        }
+        #package-set .sets .set.yellow .price{
+            background-color: var(--yellow);
+        }
+        #package-set .sets .set.green{
+            border:2px solid var(--green);
+            background: linear-gradient(0deg, rgba(100, 218, 225, 0) 0%, rgba(133, 229, 99, 0.2) 91.43%);
+            box-shadow: 0px 0px 0px 0px rgba(144, 38, 59, 0.25);
+            transition: all 250ms ease;
+            -webkit-transition: all 250ms ease;
+            -moz-transition: all 250ms ease;
+            -ms-transition: all 250ms ease;
+            -o-transition: all 250ms ease;
+}
+        #package-set .sets .set.green:hover{
+            box-shadow: 0px 0px 30px 3px rgba(144, 38, 59, 0.25);
+
+        }
+        #package-set .sets .set.green .price{
+            background-color: var(--green);
+            
+        }
+
+        #package-set .sets .set.pink{
+            border: 2px solid var(--pink);
+            background: linear-gradient(0deg, rgba(52, 174, 201, 0) 0%, rgba(239, 38, 159, 0.2) 91.43%);
+            box-shadow: 0px 0px 30px 3px rgba(144, 38, 59, 0.25);
+        }
+        #package-set .sets .set.pink .price{
+            background-color: var(--pink);
+        }
