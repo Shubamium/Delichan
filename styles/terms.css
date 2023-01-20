@@ -186,6 +186,7 @@ h2{
 
         #limit .limit_detail .others .deadline{
             border: 2px solid #30B753;
+            background: var(--mainGradient);
             /* border-image-source: linear-gradient(90deg, #30B753 0%, #989A35 100%); */
         }
         .limit_detail .others .deadline::before {
@@ -238,7 +239,10 @@ h2{
             -ms-border-radius: 50px 2px;
             -o-border-radius: 50px 2px;
             border: 4px solid var(--orange);
-}
+            background: var(--mainGradient);
+
+        }
+
         .limit_detail .others .detail > div{
             padding: 0 2em;
         }
