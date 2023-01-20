@@ -6,8 +6,12 @@ main{
 a{
     color: var(--yellow);
 }
+h2{
+    position: relative;
+}
 #terms_main{
     padding: 2em;
+    margin-bottom: 10vmax;
 }
 
     #terms_main .decor_zigzag{
@@ -30,7 +34,7 @@ a{
         position: relative;
         font-size: 1.8rem;
     }
-    #terms_main .main_text::before{
+    .halfBorder::before{
         content: '';
         width: 30%;
         position: absolute;
@@ -57,3 +61,7 @@ a{
         margin: 1em  auto;
         padding: .2em;
     }
+
+#limit{
+    border: none;
+}

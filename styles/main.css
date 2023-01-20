@@ -46,7 +46,7 @@ body{
 }
 
 #container_main{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #header{
