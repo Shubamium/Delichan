@@ -1,5 +1,8 @@
 /* Styling for =Terms= Page */
 
+/* Custom Fonts: Sacramento */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 main{
     color: var(--yellow);
 }
@@ -74,7 +77,7 @@ h2{
         gap: 2em;
     }
 
-    #limit h2{
+    #limit .main_text{
         font-size: 2.4rem;
         letter-spacing: 1px;
         color: var(--light-pink);
@@ -105,3 +108,183 @@ h2{
         bottom: 100%;
         left: 0;
     }
+
+#limit .limit_detail{
+    margin: 200px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+}
+    #limit .limit_detail .deadline,
+    #limit .limit_detail .deadline .deadline_time,
+    #limit .limit_detail .detail{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 3px solid var(--orange);
+    }
+
+
+    #limit .limit_detail .payment{
+        display: flex;
+        flex-direction: column;
+        border: 5px solid var(--orange);
+        border-radius: 2px 20% 2px 2px ;
+        -webkit-border-radius: 2px 20% 2px 2px ;
+        -moz-border-radius: 2px 20% 2px 2px ;
+        -ms-border-radius: 2px 20% 2px 2px ;
+        -o-border-radius: 2px 20% 2px 2px ;
+        padding: 5em 0;
+        background: var(--mainGradient);
+        position: relative;
+    }
+    #limit .limit_detail .payment i{
+        font-size: 15rem;
+        color: var(--pink);
+    }
+    #limit .limit_detail .payment h2{
+        color: var(--pink);
+    }
+    #limit .limit_detail .payment .decor_zigzag{
+        width: 30px;
+        height: 103%;
+        position: absolute;
+        top: -1%;
+        right: 101%;
+    }
+
+    #limit .limit_detail .others .deadline {
+        text-align: left;
+        padding: 1em;
+        border-radius: 0 40px 0 0;
+        -webkit-border-radius: 0 40px 0 0;
+        -moz-border-radius: 0 40px 0 0;
+        -ms-border-radius: 0 40px 0 0;
+        -o-border-radius: 0 40px 0 0;
+        position: relative;
+    }
+        .limit_detail .others .deadline .deadline_detail h2{
+            font-family: var(--fontFuture);
+            margin: .2em 0;
+            font-size: 2.5rem;
+        }
+        .limit_detail .others .deadline .deadline_detail p{
+            max-width: 30ch;
+        }
+
+        #limit .limit_detail .others .deadline_time{
+            border: none;
+        }
+        .limit_detail .others .deadline_time .time{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+        }
+        .limit_detail .others .deadline_time .time h2{
+            color: var(--pink);
+        }
+
+        #limit .limit_detail .others .deadline{
+            border: 2px solid #30B753;
+            /* border-image-source: linear-gradient(90deg, #30B753 0%, #989A35 100%); */
+        }
+        .limit_detail .others .deadline::before {
+             content: '';
+             width: 100%;
+             height: 100%;
+             position: absolute;
+             background: linear-gradient(90.11deg, rgba(31, 255, 107, 0.3608) -36.26%, rgba(210, 199, 87, 0) 99.97%);
+             border-radius: 0 40px 0 0;
+             -webkit-border-radius: 0 40px 0 0;
+             -moz-border-radius: 0 40px 0 0;
+             -ms-border-radius: 0 40px 0 0;
+             -o-border-radius: 0 40px 0 0;
+             opacity: .7;
+             transition: all 250ms ease;
+             -webkit-transition: all 250ms ease;
+             -moz-transition: all 250ms ease;
+             -ms-transition: all 250ms ease;
+             -o-transition: all 250ms ease;
+             transform: scaleX(.8);
+             transform-origin: center left;
+             -webkit-transform: scaleX(.8);
+             -moz-transform: scaleX(.8);
+             -ms-transform: scaleX(.8);
+             -o-transform: scaleX(.8);
+        }
+
+        .limit_detail .others .deadline:hover::before{
+            opacity: 1;
+            transform:  scaleX(1);
+            -webkit-transform:  scaleX(1);
+            -moz-transform:  scaleX(1);
+            -ms-transform:  scaleX(1);
+            -o-transform:  scaleX(1);
+        }
+
+
+        .limit_detail .others{
+            display: flex;
+            flex-direction: column;
+        }
+        #limit .limit_detail .others .detail{
+            flex: 1;
+            padding: 1em;
+            margin-top: 3em;
+            height: 100%;
+            border-radius: 50px 2px;
+            -webkit-border-radius: 50px 2px;
+            -moz-border-radius: 50px 2px;
+            -ms-border-radius: 50px 2px;
+            -o-border-radius: 50px 2px;
+            border: 4px solid var(--orange);
+}
+        .limit_detail .others .detail > div{
+            padding: 0 2em;
+        }
+        .limit_detail .others .detail .special{
+            background: linear-gradient(180deg, #EF269F 0%, #3D0C0C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+            text-shadow: 0px 3px 25px rgba(255, 87, 120, 0.2);
+        }
+        .limit_detail  .detail i{
+            font-size: 5rem;
+            margin: .2em;
+        }
+        .limit_detail .animated_text{
+            font-size: 3rem;
+            white-space: nowrap;
+            font-family: 'Sacramento', cursive;
+            overflow: visible;
+           
+        }
+        @keyframes textBop {
+            from{
+                top: 0px;
+            }
+            50%{
+                top: 120px;
+            }
+            to{
+                top: 0px;
+            }
+        }
+        .limit_detail .animated_text span{
+            display: inline-block;
+            animation: textBop 8s ease-in-out infinite;
+            -webkit-animation: textBop 8s ease-in-out infinite;
+            position: relative;
+            color: var(--pink);
+        }
+         
+        .limit_detail .others .deadline .decor_zigzag{
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: 101%;
+            z-index: -2;
+        }
