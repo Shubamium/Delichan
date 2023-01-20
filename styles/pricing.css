@@ -3,6 +3,9 @@
 main{
     color: var(--light-pink);
 }
+a{
+    color: var(--pink);
+}
 
 #package-set .sets{
     display: grid;
@@ -125,3 +128,42 @@ main{
         #package-set .sets .set.pink .price{
             background-color: var(--pink);
         }
+
+
+#package-extra{
+    text-align: center;
+    /* background-color: red; */
+    padding: 2em 0;
+}
+    #package-extra .package{
+        max-width: 70ch;
+        margin: 3em auto;
+        background: var(--mainGradient);
+    }
+    #package-extra .package .pack{
+        border: 2px solid var(--orange);
+        margin: .2em 0;
+        padding: 1em 0;
+    }
+    #package-extra .package .pack .pack_price{
+        color: white;
+        font-size: 2rem;
+    }
+    #package-extra .package .pack .pack_price span{
+        font-size: .8rem;
+    }
+    #package-extra .package .extra-text{
+        color: white;
+        font-size: .7rem;
+        margin-top: 1em;
+    }
+
+    #package-extra .package .pack h2{
+        font-size: 2.3rem;
+        font-family: var(--fontTech);
+        color: var(--bright-yellow);
+    }
+
+    .grad-up{
+        background: linear-gradient(0deg,transparent -20%, rgba(55, 33, 114, 0.363) 20%, rgba(108, 37, 29, 0.69) 101.43%);
+    }

@@ -146,7 +146,9 @@
 .text-pink{
     color: var(--pink);
 }
-
+.text-yellow{
+    color: var(--yellow);
+}
 .bold{
     font-weight: bold;
 }
