@@ -64,4 +64,44 @@ h2{
 
 #limit{
     border: none;
+    padding: 1em 0;
+    text-align: center;
 }
+
+    #limit .limit_cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+    }
+
+    #limit h2{
+        font-size: 2.4rem;
+        letter-spacing: 1px;
+        color: var(--light-pink);
+        margin: 2em 0;
+    }
+    #limit .limit_cards img{
+        max-width: 100%;
+    }
+
+    #limit .limit_cards .card{
+        background: var(--mainGradient);
+        padding: 1em;
+        border: 3px solid var(--orange);
+        display: flex;
+        flex-direction: column;
+        border-radius: 2px 2px 50px 2px;
+        -webkit-border-radius: 2px 2px 50px 2px;
+        -moz-border-radius: 2px 2px 50px 2px;
+        -ms-border-radius: 2px 2px 50px 2px;
+        -o-border-radius: 2px 2px 50px 2px;
+        position: relative;
+    }
+
+    #limit .limit_cards .card .decor_zigzag{
+        height: 20px;
+        width: 100%;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+    }
