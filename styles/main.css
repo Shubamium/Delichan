@@ -247,7 +247,13 @@ main{
         justify-content: center;
         gap: 30vw;
         max-height: 20vh;
-    }
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
     .decor_ears .left img,
     .decor_ears .right img{
         width: 100%;
@@ -266,6 +272,7 @@ main{
         .section_header h2{
             font-size: 2rem;
             color: #FF8D81;
+            white-space: nowrap;
         }
         .section_header .line{
             flex:1;
@@ -275,7 +282,13 @@ main{
             -moz-border-radius: 2px;
             -ms-border-radius: 2px;
             -o-border-radius: 2px;
-}
+        }
+        @media screen and (max-width:600px) {
+            .section_header h2{
+                font-size: 1.4rem;
+            }
+
+        }
 
 
 .btn{
