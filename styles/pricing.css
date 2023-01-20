@@ -127,6 +127,7 @@ a{
         }
         #package-set .sets .set.pink .price{
             background-color: var(--pink);
+            color: white;
         }
 
 
