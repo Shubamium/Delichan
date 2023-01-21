@@ -276,7 +276,7 @@ a{
 }
 
 #prices_extra .panel.panel.panel_price{
-    background: linear-gradient(0deg, rgba(98, 33, 114, 0) 0%, rgba(108, 37, 29, 0.468) 91.43%);
+    background: linear-gradient(0deg, rgba(64, 29, 125, 0.084) 10%, rgba(108, 37, 29, 0.401) 91.43%);
 }
 #prices_extra .panel > p{
     color: var(--yellow);
@@ -295,3 +295,31 @@ a{
 #prices_extra .panel.panel_price button{
     align-self: flex-start;
 }
+
+
+#prices_other{
+    padding: 2em;
+}
+#prices_other .btn{
+    margin: 2em 0;
+}
+#prices_other > h2{
+    text-align: center;
+    font-family: var(--fontFuture);
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+    .prices-double{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: .5em;
+    }
+    .prices-double .price-list{
+        padding: 2em .9em;
+    }
+    .prices-double .price-list .price-list_price p{
+        font-size: 2.5rem;
+    }
+
