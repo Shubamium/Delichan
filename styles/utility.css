@@ -105,8 +105,8 @@
 }
 
 .sway{
-    animation:  sway 150s linear infinite;
-    -webkit-animation:  sway 150s linear infinite;
+    animation:  sway 20s linear infinite;
+    -webkit-animation:  sway 20s linear infinite;
     transform-origin: bottom center;
 }
 /* Details */
