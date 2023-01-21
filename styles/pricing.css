@@ -7,6 +7,10 @@ a{
     color: var(--pink);
 }
 
+.section{
+    min-height: 0;
+}
+
 #package-set .sets{
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
