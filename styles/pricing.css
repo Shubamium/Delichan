@@ -297,13 +297,14 @@ a{
 }
 
 
-#prices_other{
+#prices_other,#prices_additional{
     padding: 2em;
 }
 #prices_other .btn{
     margin: 2em 0;
 }
-#prices_other > h2{
+#prices_other > h2,
+#prices_additional > h2{
     text-align: center;
     font-family: var(--fontFuture);
     font-size: 2.5rem;
@@ -323,3 +324,35 @@ a{
         font-size: 2.5rem;
     }
 
+
+.prices-double .price-list .price-list_price.double p{
+    font-size: .7rem;
+    text-align: center;
+}
+.prices-double .price-list .price-list_price.double p span{
+    font-size: 4rem;
+    display: block;
+}
+
+
+
+#prices_additional{
+    margin: 100px 0;
+}
+#prices_additional .prices-double .price-list{
+    padding: .8em 1em;
+}
+.rush-fee > h2{
+    text-align: center;
+    font-family: var(--fontFuture);
+    font-size: 2.5rem;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+    .rush-fee .price-list .price-list_price p{
+        font-size: 2rem;
+    }
+    .rush-fee .price-list{
+        padding: 1em .7em;
+        gap: 5.5em;
+    }
