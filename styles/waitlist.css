@@ -10,7 +10,8 @@
     overflow-x: auto;
     position: relative;
     align-items: flex-end;
-    }
+    min-height: 60px;
+}
 
     #waitlist-nav .btn:hover{
         filter: brightness(140%);

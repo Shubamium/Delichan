@@ -5,21 +5,17 @@ const waitParentEl = document.getElementById('all_waitlist');
 
 
 document.addEventListener('DOMContentLoaded',initializeWaitlst);
-
-
 // Starting point  === Initialize the list when html loaded
 function initializeWaitlst(){
     console.log(waitlist);
     createNavigation(Object.keys(waitlist));
 
+    // Create all waitlist
     for(const list in waitlist){
-        console.log(list);
         waitParentEl.appendChild(createWaitlist(list,waitlist[list]));
     }
-    // waitParentEl.appendChild(createWaitlist('January',waitlist.January));
-    // waitParentEl.appendChild(createWaitlist('August',waitlist.August));
-}
 
+}
 
 
 function createWaitlist(name,data){ 
@@ -77,11 +73,13 @@ function createNavigation(navigationList){
     navEl.innerHTML = "";
 
     let showAll = document.createElement('button');
-    showAll.classList.add('btn');
+    showAll.classList.add('btn','selected');
     showAll.textContent = 'All';
     navEl.appendChild(showAll);
+
+
     showAll.addEventListener('click',()=>{
-        handleNav(showAll,'show');
+        handleNav(showAll,'all');
     });
 
     navigationList.forEach(nav => {
@@ -91,7 +89,7 @@ function createNavigation(navigationList){
         navEl.appendChild(button);
 
         button.addEventListener('click',()=>{
-            handleNav(button);
+            handleNav(button,nav);
         });
 
     });
@@ -99,7 +97,27 @@ function createNavigation(navigationList){
 }
 
 
-function handleNav(btn){
-    console.log('hie');
+function handleNav(btn,category){
+    deselectAllNav();
     btn.classList.add('selected');
+    sortHandler(category);
+}
+function deselectAllNav(){
+    for(let i = 0; i < navEl.children.length;i++){
+        // console.log(navEl.children[i]);
+        navEl.children[i].classList.remove('selected');
+    }
+}
+
+
+// Function to show/hide waitlist base on the selected
+function sortHandler(category){
+    for(let i = 0; i < waitParentEl.children.length;i++){
+        if(category === 'all' || waitParentEl.children[i].dataset.wl === category){
+            waitParentEl.children[i].style.display = 'block';
+        }
+        else{
+            waitParentEl.children[i].style.display = 'none';
+        }
+    }
 }
