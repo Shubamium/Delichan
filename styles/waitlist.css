@@ -1,0 +1,43 @@
+/* Styling for =Waitlist= Page */
+
+#waitlist-nav{
+    margin:  0 auto;
+    max-width: 80%;
+    display: flex;
+    gap: 1em;
+    border-bottom: 3px solid var(--red);
+    overflow-x: auto;
+    position: relative;
+}
+
+#waitlist-nav .btn{
+    margin: 0;
+    border: 2px solid var(--red);
+    cursor:pointer;
+    color: var(--yellow);
+    font-family: var(--fontNorm);
+    letter-spacing: 2px;
+    font-weight: 300;
+    background: rgba(202, 101, 12, 0.146);
+    border-bottom: none;
+    border-radius: 0 10px 0px 0px;
+    -webkit-border-radius: 0 10px 0px 0px;
+    -moz-border-radius: 0 10px 0px 0px;
+    -ms-border-radius: 0 10px 0px 0px;
+    -o-border-radius: 0 10px 0px 0px;
+}
+#waitlist-nav .btn.selected{
+    background: var(--fullGradient);
+    border-bottom: 2px solid var(--red);
+}
+
+.nav-zig{
+    /* content: ''; */
+    width: 80%;
+    margin: 0 auto;
+    height: 10px;
+    /* position: absolute; */
+    background: url('../media/images/transparent/pattern/line_small.png');
+    /* top: 100%; */
+    /* left: 0; */
+}
