@@ -1,3 +1,5 @@
+// Script for handling the display logic for waitlist
+
 import waitlist from '../data/waitlist.js';
 
 const navEl = document.getElementById('waitlist-nav');
@@ -17,7 +19,7 @@ function initializeWaitlst(){
 
 }
 
-
+// Function to create a watlist
 function createWaitlist(name,data){ 
     let waitlist = document.createElement('div');
     waitlist.classList.add('waitlist');
@@ -34,6 +36,7 @@ function createWaitlist(name,data){
 
 }
 
+// Function to create a listing 
 function createListing({customer,type,date,payment,delivered}){
     let listing = document.createElement('div');
     let content = 
@@ -96,12 +99,14 @@ function createNavigation(navigationList){
     
 }
 
-
+// Navigation On Click
 function handleNav(btn,category){
     deselectAllNav();
     btn.classList.add('selected');
     sortHandler(category);
 }
+
+// Deselect all waitlist
 function deselectAllNav(){
     for(let i = 0; i < navEl.children.length;i++){
         // console.log(navEl.children[i]);
