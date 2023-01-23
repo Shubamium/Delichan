@@ -8,10 +8,19 @@ Thank you for commisioning me ^-^!
 2. Make any necessary changes to the files and resources in the repository.
 3. Push your changes back to the repository. -->
 
-<!-- 
-## Editable
-Check the `src/images/swappable` folder for replaceable images!
-Check the `src/scripts/gallery` folder for adding/removing images on the gallery page -->
+# Editable
+Here are the few things that you can edit:
+### The commission status
+To change the commission status, open the `index.html`and look for the `Commission Status`. Change both text to either `Open` or `Closed`
+
+### The Waitlist
+To change the waitlist, look inside the `data` folder and read the tutorial there!
+
+### The Portfolio Gallery
+To change the image or video inside The Portfolio Gallery, look inside the `data` folder and read the tutorial there!
+
+# More changes
+If you need to change anything harder like adding new pages or changing how something looks feel free to contact me ^-^!
 
 <!-- ## Contact
 
