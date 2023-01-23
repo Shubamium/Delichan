@@ -94,23 +94,29 @@
                 <!-- Section Title -->
                 <div class="section_header">
                     <div class="line"></div>
-                    <h2 class="f-future text-glow-md">
+                    <h2 class="f-future text-glow-md" id="page-title">
                         Gallery
                     </h2>
                     <div class="line"></div>
                 </div>
 
-
-                <!-- Gallery -->
-                <div id="gallery">
-                    
+                <div class="confine mx-auto">
+                    <!-- Gallery -->
+                    <div id="gallery">
+                    </div>
                 </div>
                 
                 <!-- Gallery Script -->
                 <script type="module">
                     import showPortfolio from './scripts/portfolio_handler.js';
+                    
+                    // Change what to display here!
+                    const toDisplay = "dataname";
+
+                    document.getElementById('page-title').textContent = toDisplay;
+                    let displayEl =  document.getElementById('gallery');
                     // Display the gallery
-                    showPortfolio('overlays');
+                    showPortfolio(toDisplay,displayEl);
                 </script>
             </section>
         </main>

@@ -1,0 +1,54 @@
+/* Styling for every page under =Portfolio= Page */
+
+
+#gallery{
+    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em 3em;
+    padding: 40px 5%;
+    /* grid-auto-flow: row; */
+}
+
+    #gallery > *{
+        display: block;
+        max-width: 100%;
+        transition: all 250ms ease;
+        -webkit-transition: all 250ms ease;
+        -moz-transition: all 250ms ease;
+        -ms-transition: all 250ms ease;
+        -o-transition: all 250ms ease;
+        filter: brightness(90%);
+        -webkit-filter: brightness(90%);
+        object-fit: contain;
+        max-height: 96vh;
+    }
+
+    #gallery > *:hover{
+        box-shadow: 4px 12px 55px var(--red);
+        outline: 4px solid var(--orange);
+        filter: brightness(110%);
+        -webkit-filter: brightness(110%);
+        cursor: pointer;
+    }
+
+    #gallery:has(*:hover):hover {
+        filter: brightness(20%);
+        -webkit-filter: brightness(20%);
+    }
+
+    
+
+    .large{
+        width: 100%;
+        max-height: min(1220px,140vh) !important;
+        object-fit: cover;
+        height: auto;
+    }
+    .medium{
+        width: 44%;
+    }
+    .small{
+        width: 25%;
+    }
