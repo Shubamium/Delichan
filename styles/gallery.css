@@ -28,12 +28,12 @@
     #gallery > *:hover{
         box-shadow: 4px 12px 55px var(--red);
         outline: 4px solid var(--orange);
-        filter: brightness(110%);
-        -webkit-filter: brightness(110%);
+        filter: brightness(105%);
+        -webkit-filter: brightness(105%);
         cursor: pointer;
-    }
+}
 
-    #gallery:has(*:hover):hover {
+    #gallery > *:hover ~ *:not(:hover) {
         filter: brightness(20%);
         -webkit-filter: brightness(20%);
     }
@@ -52,3 +52,9 @@
     .small{
         width: 25%;
     }
+
+
+.btn{
+    margin: 1em auto;
+    display: block;
+}

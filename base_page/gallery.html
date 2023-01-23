@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delichan</title>
+    <link rel="shortcut icon" href="media/images/transparent/icons/favicon-mascot.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/utility.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bb83019d49.js" crossorigin="anonymous"></script>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Delichan">
+    <meta name="description" content="Hi, I'm Delichan~ but you can call me Deli-!!! I'm a full-time freelance graphic designer. I'll assist you in your project ">
+
+
+</head>
+<body>
+
+   <div id="container_main">
+        <!-- Header -->
+        <header id="header">
+            <!-- Background  -->
+            <div id="header_bg">
+                <video src="media/video/background.mp4" loop muted autoplay id="bg-vid" poster="media/images/art_bg.png"></video>
+                <!-- Autoplay scripts -->
+                <script>
+                    let bg = document.getElementById('bg-vid');
+                    document.addEventListener('click',()=>{
+                        if(bg.paused){
+                            bg.play();
+                        }
+                    });
+                </script>
+            </div>
+            
+            <div class="confine mx-auto header_content">
+                <!-- Main Logo -->
+                <img src="media/images/transparent/logo_main.png" alt="Delichan Main logo" class="header_logo glow flicker-slow">
+                
+                <!-- Subtitle -->
+                <div class="subtitle">
+                    <div class="subtitle_title">
+                        <div class="line glow-md"></div> 
+                        <p class="f-future">✦ vtuber & vartist ✦</p> 
+                        <div class="line glow-md"></div> 
+                    </div>
+                    <p class="subtitle_text">
+                        Hi, I'm Delichan but you can call me Deli-!!! <br>
+                        I'm a full-time freelance graphic designer. I'll assist you in your project <span class="flower">🌻</span>
+                    </p>
+                </div>
+
+                <!-- Info List -->
+                <div class="header_info">
+                    <ul>
+                        <li>♡ delilah</li>
+                        <li>♡ she/her</li>
+                        <li>♡ 158cm</li>
+                        <li>♡ 09/07(Cancer♋)</li>
+                    </ul>
+                </div>
+
+                <!-- Navigation -->
+                <nav id="navigation">
+                    <ul class="nav">
+                        <li><a href="index.html" class="glow-sm">Home</a></li>
+                        <li><a href="about.html" class="glow-sm">About</a></li>
+                        <li><a href="portfolio.html" class="glow-sm">Portfolio</a></li>
+                        <li><a href="waitlist.html" class="glow-sm">Waitlist</a></li>
+                        <li><a href="terms.html" class="glow-sm">Terms</a></li>
+                        <li><a href="pricing.html" class="glow-sm">Pricing</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- Page Content -->
+        <main>
+            <section class="section">
+                <!-- Ear Decoration -->
+                <div class="decor_ears">
+                    <div class="left"><img src="media/images/transparent/decor/ear_fill.png" class="trans-glow-sm"></div>
+                    <div class="right"><img src="media/images/transparent/decor/ear_empty.png" class="trans-glow-sm"></div>
+                </div>
+                <!-- Section Title -->
+                <div class="section_header">
+                    <div class="line"></div>
+                    <h2 class="f-future text-glow-md" id="page-title">
+                        Gallery
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="confine mx-auto">
+                    <!-- Gallery -->
+                    <div id="gallery">
+                    </div>
+
+                    <button class="btn link"><a href="portfolio.html"><i class="fa-solid fa-arrow-left"></i>Go Back!</a></button>
+                </div>
+                
+                <!-- Gallery Script -->
+                <script type="module">
+                    import showPortfolio from './scripts/portfolio_handler.js';
+                    
+                    // Change what to display here!
+                    const toDisplay = "dataname";
+
+                    document.getElementById('page-title').textContent = toDisplay;
+                    let displayEl =  document.getElementById('gallery');
+                    // Display the gallery
+                    showPortfolio(toDisplay,displayEl);
+                </script>
+            </section>
+        </main>
+   </div>
+</body>
+</html>
