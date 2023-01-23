@@ -43,8 +43,8 @@ const waitlist =
         "delivered": "Incoming"
       }
     ]
-  }
+}
 // Replace above this ------------------->>
-
+;
 
 export default waitlist;
