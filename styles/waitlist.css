@@ -1,5 +1,8 @@
 /* Styling for =Waitlist= Page */
 
+main .section{
+    /* background: rgba(108, 37, 29, 0.122); */
+}
 #waitlist-nav{
     margin:  0 auto;
     margin-top: 70px;
