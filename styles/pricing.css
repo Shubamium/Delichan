@@ -390,7 +390,7 @@ a{
 
 
 .future-bg{
-    background: url('../media/images/city_bg.png'),rgba(80, 15, 15, 0.451) ;
+    background: url('../media/images/city_ai.png'),rgba(29, 6, 6, 0) ;
     background-position: bottom center;
     background-blend-mode: multiply;
     background-attachment: fixed;
