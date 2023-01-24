@@ -390,7 +390,7 @@ a{
 
 
 .future-bg{
-    background: url('../media/images/city_bg.png'),rgba(80, 15, 15, 0.673) ;
+    background: url('../media/images/city_bg.png'),rgba(80, 15, 15, 0.451) ;
     background-position: bottom center;
     background-blend-mode: multiply;
     background-attachment: fixed;
@@ -409,4 +409,82 @@ a{
     -moz-border-radius: 0px 40px 0px 40px;
     -ms-border-radius: 0px 40px 0px 40px;
     -o-border-radius: 0px 40px 0px 40px;
+}
+
+#package-set .sets .set:hover{
+    outline: 1px solid white;
+    scale: 1.05;
+}
+
+@media screen and (max-width:800px) {
+    #package-set .sets .set .info h2{
+        font-size: 1rem;
+    }
+    #prices .pricing{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 90%;
+    }
+    #prices .btn.link a{
+        font-size: 1rem;
+    }
+    #prices .panel.panel_price h2{
+        font-size: 1.2rem;
+    }
+    #prices_extra .panel.panel.panel_price h2{
+        font-size: 1.6rem;
+    }
+    #prices_extra .price-list{
+        padding: 1em .5em;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    #package-set .sets .set .info h2{
+        font-size: 1.5rem;
+    }
+    #package-set .sets{
+        display: flex;
+        flex-direction: column;
+    }
+    #package-extra .package{
+        max-width: 80%;
+    }
+    #package-extra .package .pack h2{
+        font-size: 1.4rem;
+    }
+    #package-extra .package .pack p{
+        font-size: .7rem;
+    }
+    #prices .pricing{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 80%;
+    }
+    #prices .panel{
+        min-height: 250px;
+    }
+    .panel.panel_price > img{
+        scale: 1;
+        object-fit: contain ;
+    }
+
+    #prices .panel.panel_price h2{
+        font-size: 1.4rem;
+    }
+    #prices_extra{
+        display: initial;
+    }
+    #prices_extra .panel{
+        max-width: 80%;
+        margin: 1.5em auto;
+    }
+    .prices-double{
+        display: flex;
+        flex-direction: column;
+    }
+    #prices_other > h2{
+        font-size: ;
+    }
 }
