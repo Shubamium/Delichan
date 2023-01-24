@@ -59,6 +59,118 @@ const portfolio =
       "size": "large"
     }
   ],
+  "Banners": [
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/53d0503b.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/5a354da7.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/d578a48f.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/97916c46.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/a63b7121.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/85c1f73a.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/c582e92b.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/d327ceb9.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/97795d01.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/11e028c3.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/590cb2aa.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/01a9517a.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/237abe72.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/0e5ddba2.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/aebf3986.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/59993169.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/8798f353.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/3a561334.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/c2ddd860.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/d337dba5.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/3f0c0138.jpg",
+      "type": "image",
+      "size": "medium"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery01/6c98396f.jpg",
+      "type": "image",
+      "size": "medium"
+    }
+  ],
   "Schedules": [
     {
       "link": "https://delichan.carrd.co/assets/images/gallery03/e3f9944d.jpg",
@@ -73,7 +185,7 @@ const portfolio =
     {
       "link": "https://delichan.carrd.co/assets/images/gallery03/f2d72a68.jpg",
       "type": "image",
-      "size": "large"
+      "size": "medium"
     },
     {
       "link": "https://delichan.carrd.co/assets/images/gallery03/719abf32.jpg",
@@ -108,7 +220,7 @@ const portfolio =
     {
       "link": "https://delichan.carrd.co/assets/images/gallery03/e7ac32c6.jpg",
       "type": "image",
-      "size": "large"
+      "size": "medium"
     },
     {
       "link": "https://delichan.carrd.co/assets/images/gallery03/022a3343.jpg",
