@@ -181,3 +181,13 @@ main .section{
         .waitlist .listing .payment.half::after{
             width: 30%;
         }
+
+
+@media screen and (max-width:600px) {
+    .waitlist .listing{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+}
