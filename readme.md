@@ -11,7 +11,7 @@ Thank you for commisioning me ^-^!
 # Editable
 Here are the few things that you can edit:
 ### The commission status
-To change the commission status, open the `index.html`and look for the `Commission Status`. Change both text to either `Open` or `Closed`
+To change the commission status, open the `index.html`and look for the `commissionStatus` at the top. Change the value to either `open` or `closed`
 
 ### The Waitlist
 To change the waitlist, look inside the `data` folder and read the tutorial there!
