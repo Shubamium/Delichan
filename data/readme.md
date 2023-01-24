@@ -9,5 +9,5 @@ Google spreadsheet link for each data, It will automatically saves if you change
 
 ## 2. Make necessary changes to the spreadsheet 
 You can change any data there, Add new row if you want to add a new image/video.
-
+If you need help on how to use it, [refer to this!](https://github.com/Shubamium/Delichan/edit/main/ExcelBasic.md)
 ![Excel Screenshot](https://i.ibb.co/3TwBtPw/index.png)
