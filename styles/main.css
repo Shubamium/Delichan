@@ -319,7 +319,10 @@ main{
    
     .btn:hover{
         box-shadow: 0px 0px 8px 1px #9f2a4571;
-    }
+        filter: brightness(120%);
+        outline: 2px solid white;
+        -webkit-filter: brightness(120%);
+}
 
     .btn.link{
         padding: 0;

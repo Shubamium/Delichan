@@ -197,6 +197,20 @@ a{
     padding: 1em 2em;
     gap: 1em;
 }
+.panel.panel_price:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    filter: brightness(150%);
+    -webkit-filter: brightness(150%);
+    transition: 50ms linear all;
+    -webkit-transition: 50ms linear all;
+    -moz-transition: 50ms linear all;
+    -ms-transition: 50ms linear all;
+    -o-transition: 50ms linear all;
+}
 .panel{
     position: relative;
 }
@@ -215,6 +229,20 @@ a{
 .panel.panel_price .price-list{
     width: 100%;
 }
+.panel.panel_price .price-list:hover{
+    transition: 250ms ease all;
+    -webkit-transition: 250ms ease all;
+    -moz-transition: 250ms ease all;
+    -ms-transition: 250ms ease all;
+    -o-transition: 250ms ease all;
+    outline: 2px solid white;
+    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+}
+
 
 .price-list{
     background: var(--mainGradient);
@@ -367,4 +395,18 @@ a{
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.prices-double .price-list:hover{
+    background: var(--brighterGradient);
+    border-radius: 0px 40px 0px 40px;
+    transition: 50ms linear all;
+    -webkit-transition: 50ms linear all;
+    -moz-transition: 50ms linear all;
+    -ms-transition: 50ms linear all;
+    -o-transition: 50ms linear all;
+    -webkit-border-radius: 0px 40px 0px 40px;
+    -moz-border-radius: 0px 40px 0px 40px;
+    -ms-border-radius: 0px 40px 0px 40px;
+    -o-border-radius: 0px 40px 0px 40px;
 }
