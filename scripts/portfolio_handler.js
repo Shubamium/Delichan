@@ -15,6 +15,7 @@ function showPortfolio(gallery,parentEl){
     });
     
 }
+
 // Create a gallery item element
 function createGalleryItem({link,type,size}){
     // Create Element Type
