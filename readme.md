@@ -18,7 +18,8 @@ To change the waitlist, look inside the `data` folder and read the tutorial ther
 To change the image or video inside The Portfolio Gallery, look inside the `data` folder and read the tutorial there!
 
 # More changes
-If you need to change anything harder like adding new pages or changing how something looks feel free to contact me ^-^!
+If you need to change anything harder like adding new pages or changing how something looks, 
+feel free to contact me ^-^!
 
 <!-- ## Contact
 
