@@ -6,9 +6,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2em 3em;
+    /* gap: 2em 3em; */
     padding: 40px 5%;
     /* grid-auto-flow: row; */
+    gap: 2em 3%;
 }
 
     #gallery > *{
@@ -50,7 +51,11 @@
         width: 44%;
     }
     .small{
-        width: 25%;
+        width: 30%;
+    }
+    .tiny{
+        width: 20%;
+
     }
 
 

@@ -35,8 +35,10 @@ main{
             animation: flicker 8s linear infinite, glow 5s ease-in-out infinite;
         }
 
-    .commission-status .status p.closed{
+    .commission-status .status p{
         text-transform: uppercase;
+    }
+    .commission-status .status p.closed{
         color: transparent;
         background: linear-gradient(117.07deg, rgba(239, 38, 159, 0.8) 22.35%, #96362C 60.72%);
         -webkit-background-clip: text;
@@ -45,7 +47,6 @@ main{
         text-fill-color: transparent;
     }
     .commission-status .status p.open{
-        text-transform: uppercase;
         background: linear-gradient(122.09deg, #5CFF80 14.97%, #FF6161 88.22%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

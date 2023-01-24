@@ -12,10 +12,8 @@ Thank you for commisioning me ^-^!
 Here are the few things that you can edit:
 ### The commission status
 To change the commission status, open the `index.html`and look for the `Commission Status`. Change both text to either `Open` or `Closed`
-
 ### The Waitlist
 To change the waitlist, look inside the `data` folder and read the tutorial there!
-
 ### The Portfolio Gallery
 To change the image or video inside The Portfolio Gallery, look inside the `data` folder and read the tutorial there!
 

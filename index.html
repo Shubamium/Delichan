@@ -1,3 +1,10 @@
+<script>
+
+    // Change here!!!!
+    var commissionStatus = "closed"; //Change the text inside the quotes to either open or closed
+    // -------------------------------------->
+
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -124,12 +131,22 @@
                         <h2 class="f-tech text-glow-md">✦ Commision Status ✦</h2>
                         <div class="status glow-sm">
                             <!-- Change both to OPEN/CLOSED -->
-                            <p class="closed <---change this too | | f-main text-glow-md"> 
-                                closed
+                            <p class="f-main text-glow-md" id="commissionStatus"> 
+                                Open
                             </p>
                             <!-- -------------------------- -->
                         </div>
                     </div>
+
+                    <!-- Script to change the commision status -->
+                    <script>
+                        function setCommissionStatus(){
+                            let statusEl = document.getElementById('commissionStatus');
+                            statusEl.classList.add(commissionStatus);
+                            statusEl.textContent = commissionStatus;
+                        }
+                        setCommissionStatus();
+                    </script>
 
                     <!-- Vgen Link -->
                     <div class="vgen">
