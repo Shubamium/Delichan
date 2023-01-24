@@ -11,7 +11,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/utility.css">
-    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/gallery.css">
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bb83019d49.js" crossorigin="anonymous"></script>
@@ -85,54 +85,41 @@
 
         <!-- Page Content -->
         <main>
-            <!-- Banner -->
-            <div class="confine mx-auto">
-                    <div class="decor_banner">
-                        <img src="media/images/transparent/art_banner.png" alt="">
-                    </div>
-            </div>
-
-           <!-- First Section -->
             <section class="section">
-                
-                <div class="confine mx-auto">
-                    <!-- Section Title -->
-                    <div class="section_header">
-                        <div class="line"></div>
-                        <h2 class="f-future text-glow-md">
-                            ShoWcAse
-                        </h2>
-                        <div class="line"></div>
-                    </div>
-
-                    <!-- Navigation Section -->
-                    <div id="gallery-nav">
-                        <!-- Navigation Part -->
-                        <div class="navigation">
-                            <div class="nav">
-                                <div class="col">
-                                    <a href="schedule.html" class="btn">♡schedule</a>
-                                    <a href="banner.html" class="btn">♡banner</a>
-                                    <a href="debut.html" class="btn">♡debut</a>
-                                    <a href="other.html" class="btn">♡other comms</a>
-                                </div>
-                                <div class="col">
-                                    <a href="logo.html" class="btn">♡logo</a>
-                                    <a href="overlay.html" class="btn">♡overlay</a>
-                                    <a href="screen.html" class="btn">♡screen</a>
-                                    <a href="panels.html" class="btn">♡panels</a>
-                                </div>
-                            </div>
-                            <div class="decor_zigzag bg-flow"></div>
-                        </div>
-
-                        <!-- Image Part -->
-                        <div class="image">
-                            <img src="media/images/chibi/chibi_cheer.png" alt="" class="trans-glow-md">
-                            <div class="bg glow"></div>
-                        </div>
-                    </div>
+                <!-- Ear Decoration -->
+                <div class="decor_ears">
+                    <div class="left"><img src="media/images/transparent/decor/ear_fill.png" class="trans-glow-sm"></div>
+                    <div class="right"><img src="media/images/transparent/decor/ear_empty.png" class="trans-glow-sm"></div>
                 </div>
+                <!-- Section Title -->
+                <div class="section_header">
+                    <div class="line"></div>
+                    <h2 class="f-future text-glow-md" id="page-title">
+                        Gallery
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="confine mx-auto">
+                    <!-- Gallery -->
+                    <div id="gallery">
+                    </div>
+
+                    <button class="btn link"><a href="portfolio.html"><i class="fa-solid fa-arrow-left"></i>Go Back!</a></button>
+                </div>
+                
+                <!-- Gallery Script -->
+                <script type="module">
+                    import showPortfolio from './scripts/portfolio_handler.js';
+                    
+                    // Change what to display here!
+                    const toDisplay = "Others";
+
+                    document.getElementById('page-title').textContent = toDisplay;
+                    let displayEl =  document.getElementById('gallery');
+                    // Display the gallery
+                    showPortfolio(toDisplay,displayEl);
+                </script>
             </section>
         </main>
    </div>

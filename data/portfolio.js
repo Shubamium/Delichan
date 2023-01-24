@@ -171,6 +171,43 @@ const portfolio =
       "size": "medium"
     }
   ],
+  "Others": [
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery04/377e612b.jpg",
+      "type": "image",
+      "size": "large"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery04/aeae5025.jpg",
+      "type": "image",
+      "size": "large"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery04/6aa7d472.jpg",
+      "type": "image",
+      "size": "large"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery04/7ec10659.jpg",
+      "type": "image",
+      "size": "large"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery04/feb20fe0.jpg",
+      "type": "image",
+      "size": "large"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery04/8663fb30.jpg",
+      "type": "image",
+      "size": "large"
+    },
+    {
+      "link": "https://delichan.carrd.co/assets/images/gallery04/5ac74e3a.jpg",
+      "type": "image",
+      "size": "large"
+    }
+  ],
   "Schedules": [
     {
       "link": "https://delichan.carrd.co/assets/images/gallery03/e3f9944d.jpg",
