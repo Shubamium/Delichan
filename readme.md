@@ -12,6 +12,7 @@ Thank you for commisioning me ^-^!
 Here are the few things that you can edit:
 ### The commission status
 To change the commission status, open the `index.html`and look for the `commissionStatus` at the top. Change the value to either `open` or `closed`
+![image](https://user-images.githubusercontent.com/108873459/214868665-e7b0a199-b4d1-44fc-93f8-45a571004577.png)
 
 ### The Waitlist
 To change the waitlist, look inside the `data` folder and read the tutorial there!
