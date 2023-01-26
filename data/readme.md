@@ -12,14 +12,29 @@ You can change any data there, Add new row if you want to add a new image/video.
 If you need help on how to use it, [refer to this!](https://github.com/Shubamium/Delichan/edit/main/ExcelBasic.md)
 ![Excel Screenshot](https://i.ibb.co/3TwBtPw/index.png)
 
+### For the waitlist data
 ```
-Oh and make sure when you're typing the date, type ' first so it doesn't automatically format it as date! 
+make sure when you're typing the date, type ' first so it doesn't automatically format it as date! 
 ```
 Don't do this `4/16`
 Instead do this `'4/16`
 
-### 2.1 How to upload image
-`Skip this part if you already know how to upload an image!` <br>
+### For gallery data
+>the `type` can be either a `video` or `image`
+
+_the size can be:_
+
+-`large` for full width.
+
+-`medium` for half the width.
+
+-`small` for 1/3 of the width.
+
+-`tiny` for 1/4 of the width.
+
+## 2.1 How to upload image
+
+```Skip this part if you already know how to upload an image!``` <br>
 
 Go ahead and Visit [this page](https://imgbb.com/).
 Once you're there, press `Start uploading` button and select the images you wanted to upload
@@ -30,17 +45,16 @@ Once you're there, press `Start uploading` button and select the images you want
 > Select `Html Full Linked` from `Embed Codes` <br>
 
 ![Link Option](https://media.discordapp.net/attachments/823571669183496202/1067510887600107561/image.png)<br>
-Go ahead and copy paste the link to notepad
+Go ahead and copy paste the link to notepad or a text editor!
 
 Find `img src` and copy the link inside the quotes near it!
 ![Link Copy](https://media.discordapp.net/attachments/823571669183496202/1067511771256066191/image.png)<br>
 That's it, you've uploaded an image!<br>
 
-## 3. Convert it to JSON
+## 3. Convert it to JSON/Code
 After you're done making changes to the excel spreadsheet, go ahead and `Download` it.
-Visit [this page](https://codebeautify.org/excel-to-json)!<br>
-This page is for converting the excel into code!
-<br>
+Visit [this page](https://codebeautify.org/excel-to-json) to *convert the excel into code* !
+
 Press `File/Browse` Button and select the excel file you just downloaded!
 ![image](https://user-images.githubusercontent.com/108873459/214382513-8fac2110-5da6-4300-8df8-59950e4feca7.png)<br>
 Once it's generated you can go ahead and copy it!
@@ -49,7 +63,7 @@ Once it's generated you can go ahead and copy it!
 ## 4. Make changes to the data file
 After you copied the data, you need to paste the data to the file inside `/data` folder.
 Navigate to the data folder! <br>
-![image](https://user-images.githubusercontent.com/108873459/214383371-efd2b5b5-dc6c-4870-b95b-0d9ee983022c.png)
+![image](https://user-images.githubusercontent.com/1088f73459/214383371-efd2b5b5-dc6c-4870-b95b-0d9ee983022c.png)
 ![image](https://user-images.githubusercontent.com/108873459/214383562-31e6a0c8-78e3-4e4f-afe8-f20589deadfb.png)
 
 > Select the file depending on the data that you want to change<br>
