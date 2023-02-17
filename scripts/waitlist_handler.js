@@ -52,7 +52,7 @@ function createListing({customer,type,date,payment,delivered}){
         </div>
         <div class="info_time">
                 <p class="date">${date}</p>
-                <div class="status_container ${delivered === 'Incoming' ? 'incoming' : 'wip'} ">
+                <div class="status_container ${delivered.toLowerCase() === 'Incoming' ? 'incoming' : 'wip'} ">
                     <p class="status">${delivered}</p>
                 </div>
         </div>
