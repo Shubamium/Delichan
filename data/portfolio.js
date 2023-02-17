@@ -59,6 +59,13 @@ const portfolio =
       "size": "large"
     }
   ],
+  "Logos": [
+    {
+      "link": "https://i.ibb.co/QHYztnF/awi-Stuff-New2.png",
+      "type": "image",
+      "size": "medium"
+    }
+  ],
   "Banners": [
     {
       "link": "https://delichan.carrd.co/assets/images/gallery01/53d0503b.jpg",
