@@ -8,11 +8,11 @@ function showPortfolio(gallery,parentEl){
         try{
             let response = await fetch(`http://localhost:8080/image?tag=${gallery.toLowerCase()}`);
             let imageList = await response.json();
-            console.log(imageList[0]);
+            // console.log(imageList[0]);
             display(imageList[0]);
             // console.log(imageList.map(data => {return {link:data.url,}}));
         }catch(err){
-            console.log(err,"Gallery Cannot be Loaded");
+            // console.log(err,"Gallery Cannot be Loaded");
             errorEl = document.createElement("div"); 
             errorEl.innerHTML = '<p>There was an error when loading the gallery </p><button class="btn" onClick="location.reload()">Reload</button>';
             parentEl.appendChild(errorEl);
@@ -52,7 +52,6 @@ function showPortfolio(gallery,parentEl){
             // Add item to the specified element
             parentEl.appendChild(createGalleryItem(list));
         });
-        console.log(data);
     }
     // try{
     //     let response = await fetch(`https://apsi.imagekit.io/v1/files?tags=${gallery.toLowerCase()}`);
