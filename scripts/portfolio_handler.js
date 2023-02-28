@@ -6,7 +6,7 @@ function showPortfolio(gallery,parentEl){
     let errorEl = null;
     async function loadData(){
         try{
-            let response = await fetch(`http://localhost:8080/image?tag=${gallery.toLowerCase()}`);
+            let response = await fetch(`https://delichan-be.vercel.app/image?tag=${gallery.toLowerCase()}`);
             let imageList = await response.json();
             // console.log(imageList[0]);
             display(imageList[0]);
