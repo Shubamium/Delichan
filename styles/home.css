@@ -127,7 +127,7 @@ main{
     display: grid;
     grid-template-columns: 2fr 5fr;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
     min-height: 220px;
     justify-content: center;
 
@@ -140,12 +140,14 @@ main{
     background: linear-gradient(90deg, rgba(229, 99, 99, 0.2) 0%, rgba(124, 78, 222, 0.114) 52.29%,  rgba(139, 98, 226, 0) 102.29%);
     box-shadow: 0px 0px 30px 3px rgba(144, 38, 59, 0.25);
     overflow: hidden;
+    padding: 0 5%;
 }
 
     .discounts .disc{
-        font-size: 3.5rem;
-        margin: .4em;
+        font-size: 4rem;
+        margin: .2em;
         line-height: 80%;
+        margin-right: 40%;
         text-align: center;
     }
     .discounts .tag{
@@ -154,13 +156,14 @@ main{
         align-items: center;
         justify-content: center;
         position: relative;
+        padding-right: 30%;
     }
     .discounts .jagged{
         position: absolute;
         width: 130%;
         height: 150%;
         rotate: 130deg;
-        left: -45%;
+        left: -65%;
         background-color: rgba(70, 35, 112, 0.502);
 
     }
@@ -172,7 +175,8 @@ main{
         display:flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: .5em;
         padding-left: 10%;
     }
 
@@ -188,7 +192,7 @@ main{
             color:#e5d863de;
         }
         .discounts .points{
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             background: linear-gradient(94.13deg, #FFFAC4 16.48%, #8E35FF 82.53%, #50119F 95.59%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -201,10 +205,61 @@ main{
             height: 20px;
             margin: 0 auto;
             margin-bottom: 120px;
-            max-width: 800px;
+            max-width: 900px;
         }
 
+        .disc-oneline{
+            display: none;
+        }
 
+@media screen and (max-width:800px) {
+    .discounts{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 1em;
+    }
+    .discounts .jagged{
+        display: none;
+    }
+
+    .discounts .tag{
+        align-self: center;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .discounts .disc{
+        display: none;
+    }
+    
+    .discounts .disc-info{
+        padding: 1em 0;
+    }
+
+    .disc-oneline{
+        display: block;
+        font-size: 4rem;
+        margin: 1em 0;
+        animation: float 2s ease-in-out infinite;
+        -webkit-animation: float 2s ease-in-out infinite;
+    }
+
+    .disc-zig{
+        margin-inline: 1em;
+    }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 @media screen and (max-width:600px) {
     .commission-status h2{
         font-size: 1rem;
