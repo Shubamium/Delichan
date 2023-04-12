@@ -229,6 +229,10 @@ a{
 .panel.panel_price .price-list{
     width: 100%;
 }
+
+.price-list.wide{
+    grid-column: 1/3;
+}
 .panel.panel_price .price-list:hover{
     transition: 250ms ease all;
     -webkit-transition: 250ms ease all;
@@ -300,14 +304,19 @@ a{
 
     
 #prices_extra{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* Remove this comment if there's two banner */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    justify-content: center;
     gap: 1.4em;
     padding: 4em 2em;
+    margin-bottom: 80px;
 }
 
 #prices_extra .panel.panel.panel_price{
     background: linear-gradient(0deg, rgba(64, 29, 125, 0.084) 10%, rgba(108, 37, 29, 0.401) 91.43%);
+    max-width: 1100px;
 }
 #prices_extra .panel > p{
     color: var(--yellow);

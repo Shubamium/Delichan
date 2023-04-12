@@ -414,6 +414,26 @@ main{
     -webkit-animation: earTwitch .4s ease-in-out 1;
 }
 
+
+#credits p{
+    font-size: .5rem;
+    opacity: .4;
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    transform-origin: left;
+    transform: rotateZ(90deg) translateY(-8px);
+    -webkit-transform: rotateZ(90deg) translateY(-8px);
+    -moz-transform: rotateZ(90deg) translateY(-8px);
+    -ms-transform: rotateZ(90deg) translateY(-8px);
+    -o-transform: rotateZ(90deg) translateY(-8px);
+}
+
+#credits p a{
+    font-size: .8rem;
+    text-decoration: none;
+}
+
 @keyframes earTwitch {
     0% { transform: rotate(0deg); }
     20% { transform: rotate(-16deg); -webkit-transform: rotate(-16deg); -moz-transform: rotate(-16deg); -ms-transform: rotate(-16deg); -o-transform: rotate(-16deg); }
