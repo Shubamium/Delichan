@@ -417,7 +417,7 @@ main{
 
 #credits p{
     font-size: .5rem;
-    opacity: .4;
+    opacity: .3;
     display: inline-block;
     position: absolute;
     z-index: 100;
@@ -432,6 +432,9 @@ main{
 #credits p a{
     font-size: .8rem;
     text-decoration: none;
+}
+#credits p a:visited{
+    color: rgb(215, 93, 93);
 }
 
 @keyframes earTwitch {
