@@ -167,3 +167,53 @@
     background-image: url("../media/images/transparent/pattern/line_small.png");
 }
 
+.shining-effect {
+	position: relative;
+}
+.shining-effect::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	bottom: 0%;
+	border-radius: inherit;
+	--gradient-col: #ff9c40;
+	background: linear-gradient(45deg, #ffffff00 0%,#ffffff00 50%, var(--gradient-col) 60%, var(--gradient-col) 65%, #ffffff00 80%);
+	background-size: 300% 300%;
+	animation: shining-forward 3.2s linear infinite;
+	animation-delay: 1200ms;
+	opacity: .2;
+	background-repeat: no-repeat;
+}
+
+.shinning-text {
+	background: linear-gradient(45deg, #1900ff, #f0f, #ff0, #0ff, #0011ff);
+	background-size: 300% 300%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shining 4s linear infinite;
+}
+@keyframes shining {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+}
+@keyframes shining-forward {
+	100% {
+	  background-position: -50% 0%;
+	}
+	50% {
+	  background-position: 100% 0%;
+	}
+	0% {
+	  background-position: 200% 0%;
+	}
+}

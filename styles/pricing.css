@@ -50,6 +50,10 @@ a{
             font-size: 1.4rem;
             color: var(--yellow);
             margin: .3em .5em;
+			white-space: nowrap;
+        }
+		#package-set .sets .set .info h2.special{
+			filter: brightness(120%);
         }
         #package-set .sets .set .info .features{
             display: flex;
