@@ -28,6 +28,36 @@ main{
     #about .image-part img{
         max-width: 100%;
     }
+	#about .image-part .border{
+		position: absolute;
+	}
+	#about .image-part .border.second{
+		stroke: red;
+		scale: 1.1;
+	}
+	#about .image-part .border .stroke{
+		stroke-dasharray: 400;
+		stroke-dashoffset: 150%;
+		animation: line-stroke 10s infinite linear;
+	}
+	#about .image-part .border.second .stroke{
+		stroke-dasharray: 250;
+		animation-delay: 1.2s;
+		stroke: #be002998;
+		animation-direction: reverse;
+		animation-duration: 8s;
+	}
+	@keyframes line-stroke {
+		0%{
+			stroke-dashoffset: 0%;
+		}
+		50%{
+			stroke-dashoffset: 150%;
+		}
+		100%{
+			stroke-dashoffset: 300%;
+		}
+	}
 
     #about .image-part .credit a{
         text-decoration: none;

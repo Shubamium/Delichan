@@ -31,7 +31,7 @@
         <header id="header">
             <!-- Background  -->
             <div id="header_bg">
-                <video src="https://ik.imagekit.io/gbxp1jibv/delichan_bg_new.webm" loop muted autoplay id="bg-vid" poster="media/images/art_bg.png"></video>
+                <video src="https://ik.imagekit.io/gbxp1jibv/background.webm" loop muted autoplay id="bg-vid" poster="media/images/art_bg.png"></video>
                 <!-- Autoplay scripts -->
                 <script>
                     let bg = document.getElementById('bg-vid');
@@ -94,13 +94,21 @@
 
                         <!-- Image -->
                         <div class="image-part">
-                            <img src="media/images/transparent/art_square.png" alt="">
+                            <img src="media/images/art_square.png" alt="" class="trans-glow-lg">
+                            <svg class="border" width="351" height="500" viewBox="0 0 351 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<polyline class="stroke glow-flicker"  points="48 1, 301 1, 349 47, 349 452, 301 498, 48 498, 1 452, 1 47, 48 1" fill="none" stroke="#EF269F" stroke-width="2" >
+								</polyline>
+							</svg>
+							<svg class="border second glow-flicker" width="351" height="500" viewBox="0 0 351 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<polyline class="stroke glow"  points="48 1, 301 1, 349 47, 349 452, 301 498, 48 498, 1 452, 1 47, 48 1" fill="none" stroke="#EF269F" stroke-width="2" >
+								</polyline>
+							</svg>
                             <!-- Credit -->
                             <p class="text-center credit">
                                 art by 
                                 <span>
-                                    <a href="https://twitter.com/uchimasui" target="_blank">
-                                        @uchimasui
+                                    <a href="https://twitter.com/fk_025" target="_blank">
+                                        Fuku Shirokami - @fk_025
                                     </a>
                                 </span>
                             </p>
