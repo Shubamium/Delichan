@@ -219,7 +219,7 @@
 }
 
 .lens-fix{
-	animation:lens-fix 5s infinite linear;
+	animation:lens-fix 12s infinite linear;
 }
 @keyframes lens-fix{
 	0%{
@@ -239,3 +239,4 @@
 		filter: blur(0px);
 	}
 }
+

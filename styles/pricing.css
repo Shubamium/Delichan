@@ -12,6 +12,9 @@ a{
 	padding-bottom: 1.3em;
 }
 
+#art_showcase{
+	min-height: 400px;
+}
 #package-set .sets{
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
@@ -382,7 +385,7 @@ a{
 
 
 #prices_additional{
-    margin: 100px 0;
+    /* margin: 100px 0; */
 }
 #prices_additional .prices-double .price-list{
     padding: .8em 1em;
@@ -404,13 +407,20 @@ a{
 
 
 .future-bg{
-    background: url('../media/images/honey.png'),rgb(44, 27, 17) ;
+    background: url('https://ik.imagekit.io/gbxp1jibv/honey-min_spwOyzobL.webp'),rgb(44, 27, 17) ;
     background-position: bottom center;
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
 }
-
+.future-bg2{
+    background: url('https://ik.imagekit.io/gbxp1jibv/banner-center-min_UjnI0gxYo.webp');
+    background-position: bottom center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: contain;
+	opacity: 0.5;
+}
 .prices-double .price-list:hover{
     background: var(--brighterGradient);
     border-radius: 0px 40px 0px 40px;
@@ -501,4 +511,31 @@ a{
     #prices_other > h2{
         font-size: 2.4rem;
     }
+}
+
+.credit {
+	position: absolute;
+	z-index: 200;
+	opacity: .6;
+	left: 2%;
+
+}
+.credit p{
+	position: absolute;
+	z-index: 100;
+	color: white;
+	font-weight: light;
+	font-size: small;
+	opacity: .4;
+}   
+.credit p span{
+	font-weight: bold;
+}
+.credit a{
+	color: white;
+	font-weight: 600;
+	text-decoration: none;
+}
+.credit a:hover{
+	color: var(--pink);
 }
