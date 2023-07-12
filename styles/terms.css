@@ -461,3 +461,8 @@ main{
             margin-block: -20px;
         }
     }
+
+#skeb-warn.center {
+	justify-content: center;
+	flex-direction: column;
+}
