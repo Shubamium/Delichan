@@ -9,6 +9,7 @@ a{
 
 .section{
     min-height: 0;
+	padding-bottom: 1.3em;
 }
 
 #package-set .sets{
