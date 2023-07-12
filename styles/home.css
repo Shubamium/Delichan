@@ -292,7 +292,7 @@ main{
     overflow: hidden;
 }
     .decor_banner img{
-        opacity: 0.2;
+        opacity: 0.5;
         position: relative;
         bottom: -20px;
 		width: 100%;
@@ -301,6 +301,7 @@ main{
 		transform: translate(-50%);
 		margin: 0 auto;
 		mix-blend-mode: multiply;
+		animation: lens-fix 5s linear infinite;
     }
     .decor_banner p{
         z-index: 1;
