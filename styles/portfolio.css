@@ -21,6 +21,7 @@ main{
     max-width: 80%;
     margin: 0 auto;
     margin-top: -30%;
+	animation: b;
 }
 
  
@@ -128,3 +129,27 @@ main{
             display: initial;
         }
     }
+
+	.decor_banner{
+		position: relative;
+	}
+	.decor_banner p{
+		position: absolute;
+        color: white;
+        font-weight: light;
+        font-size: small;
+		bottom: 0.5%;
+		right: 0%;
+		opacity: .4;
+    }   
+    .decor_banner p span{
+        font-weight: bold;
+    }
+    .decor_banner p a{
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+    }
+	.decor_banner p a:hover{
+		color: var(--pink);
+	}
