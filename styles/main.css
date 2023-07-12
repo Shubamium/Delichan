@@ -88,12 +88,12 @@ body{
             object-fit: cover;
             height: 100vh;
             max-height: 1200px;
-            opacity: .2;
-            filter: blur(.12vw) ;
+            opacity: .25;
+            filter: blur(.15vw) ;
             -webkit-filter: blur(.12vw) ;
             animation: unblur 4s ease;
             -webkit-animation: unblur 4s ease;
-}
+		}
 
         @keyframes unblur {
             from{
