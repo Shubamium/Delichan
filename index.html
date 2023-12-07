@@ -1,8 +1,37 @@
 <script>
+		function setCommissionStatus(status,month){
+			console.log(status)
+				let statusEl = document.getElementById('commissionStatus');
+				statusEl.classList.remove(status === 'open' ? 'closed' : 'open' )
+				statusEl.classList.add(status);
+				statusEl.textContent = status;
 
+				waitlistEl = document.getElementById('waitlist');
+				waitlistEl.textContent = `✦ ${month} WAitlist is open ✦`
+		}
+		async function getData(){
+			// Select the DOM-element, so that you can replace it with content
+			let PROJECT_ID = "g6re9h6u";
+			let DATASET = "production";
+			let QUERY = encodeURIComponent('*[_type == "general" && preset == "main"]');
+
+			// Compose the URL for your project's endpoint and add the query
+			let URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
+
+			const response = await fetch(URL)
+			return await response.json()
+			
+		}
     // Change here!!!!
-    var commissionStatus = "open"; //Change the text inside the quotes to either open or closed
+    var commissionStatus = 'open'; //Change the text inside the quotes to either open or closed
     // -------------------------------------->
+		var cmsData;
+		getData().then((data) => {
+			cmsData = data.result[0];
+			console.log(cmsData)
+			commissionStatus = cmsData && cmsData.status ? 'open' : 'closed';
+			setCommissionStatus(commissionStatus,cmsData.waitlist);
+		});
 
 </script>
 <!DOCTYPE html>
@@ -137,20 +166,14 @@
                     <div class="commission-status">
                         <h2 class="f-tech text-glow-md">✦ Commission Status ✦</h2>
                         <div class="status glow-sm">
-                            <!-- Change both to OPEN/CLOSED -->
                             <p class="f-main text-glow-md open" id="commissionStatus">OPEN</p>
-                            <!-- -------------------------- -->
                         </div>
                     </div>
 
                     <!-- Script to change the commision status -->
                     <script>
-                        function setCommissionStatus(){
-                            let statusEl = document.getElementById('commissionStatus');
-                            statusEl.classList.add(commissionStatus);
-                            statusEl.textContent = commissionStatus;
-                        }
-                        setCommissionStatus();
+                 
+                        setCommissionStatus(commissionStatus);
                     </script>
 
                     <!-- Vgen Link -->
@@ -169,7 +192,7 @@
 
                     <!-- Waitlist Link -->
                     <div class="waitlist">
-                        <p class="f-future text-xs">
+                        <p class="f-future text-xs" id="waitlist">
                             ✦ December WAitlist is open ✦
                         </p>
                         <button class="btn link small">
