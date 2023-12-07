@@ -1,13 +1,16 @@
 <script>
 		function setCommissionStatus(status,month){
-			console.log(status)
 				let statusEl = document.getElementById('commissionStatus');
-				statusEl.classList.remove(status === 'open' ? 'closed' : 'open' )
+				if(statusEl){
+					statusEl.classList.remove(status === 'open' ? 'closed' : 'open' )
 				statusEl.classList.add(status);
 				statusEl.textContent = status;
 
+				}
 				waitlistEl = document.getElementById('waitlist');
-				waitlistEl.textContent = `✦ ${month} WAitlist is open ✦`
+				if(waitlistEl) {
+					waitlistEl.textContent = `✦ ${month} WAitlist is open ✦`
+				}
 		}
 		async function getData(){
 			// Select the DOM-element, so that you can replace it with content
@@ -28,10 +31,15 @@
 		var cmsData;
 		getData().then((data) => {
 			cmsData = data.result[0];
-			console.log(cmsData)
-			commissionStatus = cmsData && cmsData.status ? 'open' : 'closed';
-			setCommissionStatus(commissionStatus,cmsData.waitlist);
 		});
+
+		window.addEventListener('DOMContentLoaded',()=>{
+			if(cmsData){
+				commissionStatus = cmsData && cmsData.status ? 'open' : 'closed';
+				setCommissionStatus(commissionStatus,cmsData.waitlist);
+			}
+
+		})
 
 </script>
 <!DOCTYPE html>
