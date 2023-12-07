@@ -309,13 +309,13 @@ main{
         bottom: 0;
         left: 10%;
         color: white;
+        font-weight: light;
         font-size: small;
         transform: scale(-1);
         -webkit-transform: scale(-1);
         -moz-transform: scale(-1);
         -ms-transform: scale(-1);
         -o-transform: scale(-1);
-        font-weight: light;
     }   
     .decor_banner p span{
         font-weight: bold;
