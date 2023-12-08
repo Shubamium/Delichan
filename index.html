@@ -28,16 +28,19 @@
     // Change here!!!!
     var commissionStatus = 'open'; //Change the text inside the quotes to either open or closed
     // -------------------------------------->
-		var cmsData;
-		getData().then((data) => {
-			cmsData = data.result[0];
-		});
-
+	
 		window.addEventListener('DOMContentLoaded',()=>{
-			if(cmsData){
+			var cmsData;
+			getData().then((data) => {
+				cmsData = data.result[0];
+				if(cmsData){
+				
 				commissionStatus = cmsData && cmsData.status ? 'open' : 'closed';
 				setCommissionStatus(commissionStatus,cmsData.waitlist);
 			}
+			});
+
+		
 
 		})
 
