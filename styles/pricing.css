@@ -378,7 +378,10 @@ a{
     text-align: center;
 }
 .prices-double .price-list .price-list_price.double p span{
+		letter-spacing: -10px;
     font-size: 4rem;
+		text-align: center;
+		transform: translateX(-20px);
     display: block;
 }
 

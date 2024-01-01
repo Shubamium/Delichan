@@ -7,16 +7,18 @@ function showPortfolio(gallery,parentEl){
     async function loadData(){
         try{
             // let response = await fetch(`https://delichan-be.vercel.app/image?tag=${gallery.toLowerCase()}`);
-            let response = await fetchGalleryData(gallery.toLowerCase());
             // let imageList = await response.json();
             // console.log(imageList[0]);
             // display(imageList[0]);
 						// display(response)
+						// console.log(imageList.map(data => {return {link:data.url,}}));
+
+
+						let response = await fetchGalleryData(gallery.toLowerCase());
 						response.forEach(list => {
 							// Add item to the specified element
 							parentEl.appendChild(createGalleryItem(list));
 					});
-            // console.log(imageList.map(data => {return {link:data.url,}}));
         }catch(err){
             // console.log(err,"Gallery Cannot be Loaded");
             errorEl = document.createElement("div"); 
@@ -26,62 +28,6 @@ function showPortfolio(gallery,parentEl){
         
     }
     loadData();
-
-    function display(data){
-        // const getSize = (size)=>{
-        //     switch(size){
-        //         case 1:
-        //             return 'tiny'
-        //         case 2:
-        //             return 'small'
-        //         case 3:
-        //             return 'medium'
-        //         case 4:
-        //             return 'large'
-        //         default:
-        //             return 'medium'
-        //     }
-        // }
-        // const getType = (type)=>{
-        //     return type === 'image' ? type : 'video';
-        // }
-        // const data = list.map(data=>{
-        //     let size = 'medium'; //Default Size
-        //     if(data.customMetadata.size){
-        //         size = getSize(data.customMetadata.size);
-        //     }
-        //     let type = getType(data.fileType);
-        //     const imageData = {link:data.url,type:type, size:size};
-        //     return imageData;
-        // });
-        data.forEach(list => {
-            // Add item to the specified element
-            parentEl.appendChild(createGalleryItem(list));
-        });
-    }
-    // try{
-    //     let response = await fetch(`https://apsi.imagekit.io/v1/files?tags=${gallery.toLowerCase()}`);
-    //     let imageList = await response.json();
-    //     console.log(imageList);
-    // }catch(err){
-    //     console.log(err,"Gallery Cannot be Loaded");
-        
-    // }
-
-
- 
-    // if(!imageList){
-    //     console.log("No Category is found!! Check the source code and make sure the category exists!");
-    //     return;
-    // }
-
-    // console.log(gallery);
-    // imageList.forEach(list => {
-    //     // Add item to the specified element
-    //     parentEl.appendChild(createGalleryItem(list));
-    // });
-    
-}
 
 // Create a gallery item element
 function createGalleryItem({link,type,size,alt}){
@@ -128,7 +74,6 @@ async function fetchGalleryData(type){
 			}
 		})
 		return formatData
-		// console.error(formatData)
 }
 
 
@@ -138,5 +83,64 @@ async function fetchGalleryData(type){
 // 	console.log(newUrl)
 // 	return ""
 // }
+
+
+
+// function display(data){
+// 	// const getSize = (size)=>{
+// 	//     switch(size){
+// 	//         case 1:
+// 	//             return 'tiny'
+// 	//         case 2:
+// 	//             return 'small'
+// 	//         case 3:
+// 	//             return 'medium'
+// 	//         case 4:
+// 	//             return 'large'
+// 	//         default:
+// 	//             return 'medium'
+// 	//     }
+// 	// }
+// 	// const getType = (type)=>{
+// 	//     return type === 'image' ? type : 'video';
+// 	// }
+// 	// const data = list.map(data=>{
+// 	//     let size = 'medium'; //Default Size
+// 	//     if(data.customMetadata.size){
+// 	//         size = getSize(data.customMetadata.size);
+// 	//     }
+// 	//     let type = getType(data.fileType);
+// 	//     const imageData = {link:data.url,type:type, size:size};
+// 	//     return imageData;
+// 	// });
+// 	data.forEach(list => {
+// 			// Add item to the specified element
+// 			parentEl.appendChild(createGalleryItem(list));
+// 	});
+// }
+// try{
+//     let response = await fetch(`https://apsi.imagekit.io/v1/files?tags=${gallery.toLowerCase()}`);
+//     let imageList = await response.json();
+//     console.log(imageList);
+// }catch(err){
+//     console.log(err,"Gallery Cannot be Loaded");
+	
+// }
+
+
+
+// if(!imageList){
+//     console.log("No Category is found!! Check the source code and make sure the category exists!");
+//     return;
+// }
+
+// console.log(gallery);
+// imageList.forEach(list => {
+//     // Add item to the specified element
+//     parentEl.appendChild(createGalleryItem(list));
+// });
+
+}
+
 export default showPortfolio;
 
