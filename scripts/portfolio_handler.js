@@ -51,20 +51,25 @@ function createGalleryItem({link,type,size,alt}){
 }
 
 // Select the DOM-element, so that you can replace it with content
-let PROJECT_ID = "g6re9h6u";
-let DATASET = "production";
+// let PROJECT_ID = "g6re9h6u";
+// let DATASET = "production";
 
 async function fetchGalleryData(type){
 	
-		let QUERY = encodeURIComponent(`*[_type == "${type}"]{
-			title,
-			"size":art.size,
-			"imageUrl": art.image.asset->url
-		}`);
-		// Compose the URL for your project's endpoint and add the query
+	let QUERY = encodeURIComponent(`*[_type == "${type}"]{
+		title,
+		"size":art.size,
+		"imageUrl": art.image.asset->url
+	}`);
+		let PROJECT_ID = "g6re9h6u";
+		let DATASET = "production";
+
+	// Compose the URL for your project's endpoint and add the query
 		let URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
+		console.log(URL)
 		const response = await fetch(URL);
 		const data = await response.json();
+
 		const formatData = data.result.map(artwork => {
 			return {
 				alt:artwork.title,
